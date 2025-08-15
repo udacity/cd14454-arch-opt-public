@@ -1,0 +1,37 @@
+# Core ML and PyTorch ecosystem
+torch==2.3.0                
+torchvision>=0.18.0
+numpy>=1.20.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+
+# Data visualization and analysis
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# Jupyter and notebook utilities
+jupyter>=1.0.0
+ipywidgets>=7.6.0
+markdown>=3.3.0          
+
+# Model profiling and training utilities
+fvcore>=0.1.5                    # FLOPS caount
+gputil>=1.3.0                    # GPU status
+tqdm>=4.61.0                     # Progress bars
+thop>=0.0.31                     # Model profiling (FLOPs, parameters)
+tensorboard>=2.5.0               # Training visualization
+torchmetrics>=1.7.3              # Calculate evaluation metrics
+torchsummary>=1.5.1              # Visualize model architecture
+
+# Dataset utilities
+pillow>=9.0.0                    # Image loading
+medmnist>=2.1.2                  # Benchmark medical image datasets
+
+# Model export and inference optimization
+docker>=7.0.0                    # For containerization with Triton Inference Server
+onnx>=1.15.0                     # Export PyTorch models
+onnxruntime>=1.16.0              # Run ONNX models efficiently
+tensorrt-cu12==10.0.1            # TensorRT backend for CUDA 12, CUDNN 8.9.2, NVIDIA driver 550, python 3.10
+tritonclient[http]>=2.59.0       # Client to access Triton server endpoints
+triton-model-analyzer==1.40.0    # Tool to analyze model memory in Triton Inference Server
